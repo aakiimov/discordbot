@@ -14,13 +14,20 @@ bot.on('ready', () => {
 });
 // команда, и то, что она должна выполнить //
 bot.on('message', msg => {
-    if (msg.content === prefix + 'бот') {
-        msg.reply('Привет! Бот работает.');
+    if (msg.content === prefix + 'bot') {
+        msg.reply('бот работает.');
     }
 });
 bot.on('message', msg => {
     if (msg.content === prefix + 'help') {
-        msg.reply('Привет! Список моих команд, существующих на данный момент:\nБот - проверка работоспособности бота');
+        msg.reply('мои команды:\n!bot - проверка работоспособности бота\n!ping - пинг бота');
+    }
+});
+bot.on('message', msg => {
+    if (msg.content === prefix + 'ping') {
+        const start = new Date();
+        const end = new Date();
+        msg.reply(`понг! Сейчас пинг составляет ${end-start}ms. Пинг до discordapi: ${end-start}ms`)
     }
 });
 bot.login(token);
