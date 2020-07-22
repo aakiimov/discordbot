@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aakiimov/discordbot.git"
+    "url": "https://github.com/aakiimov/discordbot"
   },
   "author": "aakiimov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aakiimov/discordbot/issues"
   },
-  "homepage": "https://github.com/aakiimov/discordbot#readme",
+  "homepage": "https://github.com/aakiimov/discordbot",
   "dependencies": {
     "discord.js": "^12.2.0"
   }
