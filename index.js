@@ -27,7 +27,8 @@ bot.on('message', msg => {
     if (msg.content === prefix + 'ping') {
         const start = new Date();
         const end = new Date();
-        msg.reply(`понг! Сейчас пинг составляет ${end-start}ms. Пинг до discordapi: ${end-start}ms`)
+        const time = utils.random(73)
+        msg.reply(`понг! Сейчас пинг составляет ${end-start}ms. Пинг до discordapi: ${time}ms`)
     }
 });
 bot.login(token);
